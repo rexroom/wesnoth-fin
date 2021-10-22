@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.8.2-CVS\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2021-06-23 11:42-0400\n"
-"PO-Revision-Date: 2021-10-22 19:19+0300\n"
+"PO-Revision-Date: 2021-10-22 23:24+0300\n"
 "Last-Translator: Juhana Uuttu <rexroom@sci.fi>\n"
 "Language-Team: Finnish <http://wiki.wesnoth.org/FinnishTranslation>\n"
 "Language: fi\n"
@@ -38,12 +38,12 @@ msgstr "Kokeellinen tekoäly"
 #. [ai]: id=idle_ai
 #: data/ai/ais/idle_ai.cfg:4
 msgid "Multiplayer_AI^Dev AI: Idle AI"
-msgstr ""
+msgstr "Keh. tekoäly: Laiska tekoäly"
 
 #. [ai]: id=ai_default_rca_alternate_recruiting
 #: data/ai/dev/ai_default_rca_alternate_recruiting.cfg:10
 msgid "Multiplayer_AI^Dev AI: Default AI (RCA) with Alternate Recruiting"
-msgstr ""
+msgstr "Keh. tekoäly: Oletustekoäly (RCA) vaihtoeht. värväyksellä"
 
 #. [terrain_type]: id=fence
 #. [terrain_type]: id=fence_iron
@@ -4015,6 +4015,9 @@ msgid ""
 "multiplayer lobby; either by playing sound alerts or (if the game window is "
 "inactive or minimized) displaying desktop notifications."
 msgstr ""
+"Valitse, miten haluaisit ilmoitettavana moninpelin tapahtumista tai "
+"moninpeliaulassa; joko soittamalla äänihälytyksen tai (jos peli-ikkuna on "
+"toimeton tai pienennettynä) näyttämällä työpöytäilmoituksen."
 
 #. [widget]: id=label
 #. [label]
@@ -4224,7 +4227,7 @@ msgstr "Kultaa kylästä"
 #. [grid]
 #: data/gui/window/mp_create_game.cfg:336
 msgid "The number of unit levels each village can support"
-msgstr ""
+msgstr "Tuettavien yksiköiden lukumäärä per kylä"
 
 #. [grid]
 #: data/gui/window/mp_create_game.cfg:336
@@ -4281,8 +4284,9 @@ msgstr "Salli mukautetut aikarajat"
 
 #. [grid]
 #: data/gui/window/mp_create_game.cfg:451
+#, fuzzy
 msgid "Initial Limit"
-msgstr ""
+msgstr "Alustava raja"
 
 #. [grid]
 #: data/gui/window/mp_create_game.cfg:451
@@ -4461,6 +4465,9 @@ msgid ""
 "The server will run as a background process until all users have "
 "disconnected. Do you wish to continue?"
 msgstr ""
+"Paikallinen palvelintoiminto on käynnistettävä jakaakseen verkkopelin. "
+"Palvelin toimii taustaprosessina kunnes kaikki käyttäjät poistuvat. Haluatko "
+"jatkaa?"
 
 #. [button]: id=select_leader
 #: data/gui/window/mp_join_game.cfg:71 data/gui/window/mp_staging.cfg:70
@@ -5225,7 +5232,7 @@ msgstr "Määrittele valintoja"
 #. [label]
 #: data/gui/window/sp_options_configure.cfg:62
 msgid "Configure settings for the selected custom modifications."
-msgstr ""
+msgstr "Muokkaa asetuksia valituille mukautettuihin muunnelmiin."
 
 #. [label]
 #: data/gui/window/statistics_dialog.cfg:141
@@ -5556,6 +5563,7 @@ msgstr "Kutsu yksikköä"
 #: data/gui/window/unit_recall.cfg:311
 msgid "Search for unit name, unit type name, unit level, or trait"
 msgstr ""
+"Etsi yksikön nimeä, yksikön tyypin nimeä, yksikön tasoa tai ominaisuutta"
 
 #. [button]: id=rename
 #: data/gui/window/unit_recall.cfg:401
@@ -5597,19 +5605,19 @@ msgstr "Yksityiskohdat:"
 
 #: src/build_info.cpp:271
 msgid "feature^Lua console completion"
-msgstr ""
+msgstr "Lua-konsolin täydennys"
 
 #: src/build_info.cpp:278
 msgid "feature^D-Bus notifications back end"
-msgstr ""
+msgstr "D-Bus-ilmoitusjärjestelmä"
 
 #: src/build_info.cpp:287
 msgid "feature^Win32 notifications back end"
-msgstr ""
+msgstr "Win32-ilmoitusjärjestelmä"
 
 #: src/build_info.cpp:293
 msgid "feature^Cocoa notifications back end"
-msgstr ""
+msgstr "Cocoa-ilmoitusjärjestelmä"
 
 #: src/build_info.cpp:331 src/desktop/version.cpp:121
 msgid "cpu_architecture^<unknown>"
@@ -5617,7 +5625,7 @@ msgstr "<tuntematon>"
 
 #: src/desktop/paths.cpp:96
 msgid "filesystem_path_system^Volumes"
-msgstr ""
+msgstr "Levyt"
 
 #: src/desktop/paths.cpp:200
 msgid "filesystem_path_game^Game executables"
@@ -5650,13 +5658,15 @@ msgstr "<tuntematon>"
 #. TRANSLATORS: translate the part inside <...> only
 #: src/filesystem.cpp:635
 msgid "--userdata-dir=<relative path that doesn't start with a period>"
-msgstr ""
+msgstr "--userdata-dir=<suhteellinen polku joka ei ala pisteellä>"
 
 #: src/filesystem.cpp:638
 msgid ""
 "Use an absolute path, or a relative path that starts with a period and a "
 "backslash"
 msgstr ""
+"Käytä absoluuttista polkua, tai suhteellista polkua, joka alkaa pisteellä ja "
+"kenoviivalla"
 
 #. TRANSLATORS: translate the part inside <...> only
 #: src/filesystem.cpp:703 src/filesystem.cpp:724
@@ -5668,6 +5678,8 @@ msgid ""
 "Use absolute paths. Relative paths are deprecated because they are "
 "interpreted relative to $HOME"
 msgstr ""
+"Käytä absoluuttisia polkuja. Suhteelliset polut ovat vanhentuneita, koska ne "
+"tulkitaan verraten polkuun $HOME"
 
 #. TRANSLATORS: This is the language code which will be used
 #. to store and fetch localized non-textual resources, such as images,
@@ -5803,7 +5815,7 @@ msgstr "Piirrettävällä alueella on negatiivinen koko"
 
 #: src/gui/core/canvas.cpp:836
 msgid "Area to draw is larger than widget size"
-msgstr ""
+msgstr "Piirrettävä alue on suurempi kuin ikkunaelementin koko"
 
 #: src/gui/core/widget_definition.cpp:30
 msgid "No state or draw section defined."
@@ -6506,6 +6518,8 @@ msgstr "Ladataan auladataa"
 #: src/gui/dialogs/lua_interpreter.cpp:677
 msgid "The lua console can only be used in debug mode! (Run ':debug' first)"
 msgstr ""
+"Lua-konsolia voi käyttää vain vianjäljintätilassa! (Suorita ensin ':debug' "
+"ensin)"
 
 #: src/gui/dialogs/lua_interpreter.cpp:678
 msgid "lua console"
